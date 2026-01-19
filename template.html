@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Pin Saga — PIN #1</title>
+  <title>PIN #X — Title | Pin Saga</title>
   <link rel="shortcut icon" href="images/PinSaga.ico" type="image/x-icon" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Pin Saga | Cultural recognition project. Scan the pin. Read the saga." />
@@ -44,11 +44,14 @@
     }
 
     .brand{
-      display:flex;
-      align-items:center;
-      gap:10px;
-      opacity:.95;
-    }
+    display:flex;
+    align-items:center;
+    gap:10px;
+    opacity:.95;
+    text-decoration:none;
+  }
+  .brand:hover{ opacity:1; }
+
 
     .brand img{
       width:28px;
@@ -61,18 +64,6 @@
       letter-spacing:.06em;
       text-transform:uppercase;
       opacity:.9;
-    }
-
-    .home-link{
-      font-size:.95rem;
-      opacity:.75;
-      text-decoration:none;
-      border-bottom:1px solid transparent;
-      padding-bottom:2px;
-    }
-    .home-link:hover{
-      opacity:1;
-      border-bottom:1px solid var(--soft);
     }
 
     header{
@@ -230,13 +221,11 @@
   <div class="wrap">
 
     <div class="top">
-      <div class="brand">
-        <!-- optional mini icon; reuse your pin image or a tiny logo -->
-        <img src="images/PinSaga.png" alt="Pin Saga">
-        <div class="brand-name">Pin Saga</div>
-      </div>
-       
-      <a class="home-link" href="/">Home</a>
+      <a class="brand" href="/" aria-label="Pin Saga home">
+      <img src="images/PinSaga.png" alt="Pin Saga">
+      <div class="brand-name">Pin Saga</div>
+    </a>
+
     </div>
       
     <header>
