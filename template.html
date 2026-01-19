@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pin Saga — PIN #1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pin Saga | Cultural recognition project. Scan the pin. Read the saga." />
+  <style>
+    :root{
+      --bg:#0f0f0f;
+      --panel:#151515;
+      --text:#ffffff;
+      --muted:rgba(255,255,255,.72);
+      --soft:rgba(255,255,255,.12);
+      --maxw:780px;
+      --radius:18px;
+    }
+
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.65;
+    }
+
+    a{ color:inherit; text-decoration:underline; text-underline-offset:3px; opacity:.95; }
+    a:hover{ opacity:1; }
+
+    .wrap{
+      max-width:var(--maxw);
+      margin:0 auto;
+      padding:40px 18px 80px;
+    }
+
+    .top{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+      margin-bottom:22px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      opacity:.95;
+    }
+
+    .brand img{
+      width:28px;
+      height:28px;
+      display:block;
+    }
+
+    .brand-name{
+      font-size:.98rem;
+      letter-spacing:.06em;
+      text-transform:uppercase;
+      opacity:.9;
+    }
+
+    .home-link{
+      font-size:.95rem;
+      opacity:.75;
+      text-decoration:none;
+      border-bottom:1px solid transparent;
+      padding-bottom:2px;
+    }
+    .home-link:hover{
+      opacity:1;
+      border-bottom:1px solid var(--soft);
+    }
+
+    header{
+      margin-top:12px;
+      margin-bottom:26px;
+    }
+
+    .pin-title{
+      display:flex;
+      align-items:baseline;
+      gap:12px;
+      flex-wrap:wrap;
+      margin:0 0 10px;
+    }
+
+    .pin-badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:6px 10px;
+      border:1px solid var(--soft);
+      border-radius:999px;
+      background:rgba(255,255,255,.03);
+      font-size:.95rem;
+      letter-spacing:.02em;
+      opacity:.9;
+      white-space:nowrap;
+    }
+
+    .pin-badge b{ opacity:1; }
+
+    h1{
+      font-size:2.2rem;
+      margin:0;
+      letter-spacing:.01em;
+    }
+
+    .subtitle{
+      margin:0;
+      color:var(--muted);
+      font-size:1.05rem;
+      max-width:60ch;
+    }
+
+    .card{
+      background:var(--panel);
+      border:1px solid var(--soft);
+      border-radius:var(--radius);
+      padding:18px;
+      margin:18px 0;
+    }
+
+    .hero{
+      margin:18px 0 8px;
+    }
+
+    .hero img{
+      width:100%;
+      height:auto;
+      display:block;
+      border-radius:14px;
+      border:1px solid var(--soft);
+    }
+
+    .caption{
+      margin:10px 2px 0;
+      color:var(--muted);
+      font-size:.95rem;
+    }
+
+    .content p{
+      margin:0 0 14px;
+      color:rgba(255,255,255,.92);
+      font-size:1.06rem;
+    }
+
+    .content h2{
+      margin:26px 0 10px;
+      font-size:1.2rem;
+      letter-spacing:.01em;
+    }
+
+    .divider{
+      height:1px;
+      background:var(--soft);
+      margin:26px 0;
+      border:0;
+    }
+
+    .author{
+      display:flex;
+      gap:14px;
+      align-items:flex-start;
+      flex-wrap:wrap;
+    }
+
+    .author .avatar{
+      width:54px;
+      height:54px;
+      border-radius:14px;
+      border:1px solid var(--soft);
+      background:rgba(255,255,255,.04);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      color:rgba(255,255,255,.85);
+      flex:0 0 auto;
+    }
+
+    .author .meta{
+      flex:1 1 260px;
+      min-width:240px;
+    }
+
+    .author .name{
+      margin:0 0 6px;
+      font-size:1.05rem;
+    }
+
+    .author .bio{
+      margin:0;
+      color:var(--muted);
+      font-size:.98rem;
+    }
+
+    .footer{
+      margin-top:50px;
+      color:rgba(255,255,255,.55);
+      font-size:.92rem;
+      text-align:center;
+    }
+
+    /* Make embedded videos responsive */
+    .video{
+      position:relative;
+      padding-top:56.25%;
+      border-radius:14px;
+      overflow:hidden;
+      border:1px solid var(--soft);
+      background:#000;
+      margin:18px 0;
+    }
+    .video iframe{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      border:0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <div class="top">
+      <div class="brand">
+        <!-- optional mini icon; reuse your pin image or a tiny logo -->
+        <img src="images/PinSaga.png" alt="Pin Saga">
+        <div class="brand-name">Pin Saga</div>
+      </div>
+
+      <a class="home-link" href="/">Home</a>
+    </div>
+
+    <header>
+      <div class="pin-title">
+        <span class="pin-badge">PIN <b>#1</b></span>
+        <h1>Title goes here</h1>
+      </div>
+      <p class="subtitle">
+        One short line to frame the story. (Optional)
+      </p>
+    </header>
+
+    <!-- Optional hero image -->
+    <section class="hero">
+      <!-- replace with your photo -->
+      <img src="images/PinSaga.png" alt="Pin #1 image">
+      <p class="caption">Caption (optional). Location, date, credit.</p>
+    </section>
+
+    <section class="card content">
+      <p>
+        Your text starts here. Keep paragraphs short for mobile reading.
+      </p>
+
+      <p>
+        Second paragraph. You can add historical context, references, and a narrative tone.
+      </p>
+
+      <h2>Optional section title</h2>
+      <p>
+        Add another section if needed (e.g., “Context”, “Timeline”, “Sources”).
+      </p>
+
+      <!-- Optional inline image -->
+      <!--
+      <div class="hero">
+        <img src="images/sample-mid.jpg" alt="Mid image">
+        <p class="caption">Mid caption (optional).</p>
+      </div>
+      -->
+
+      <!-- Optional video embed -->
+      <!--
+      <div class="video">
+        <iframe
+          src="https://www.youtube.com/embed/VIDEO_ID"
+          title="Pin Saga video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      -->
+    </section>
+
+    <hr class="divider" />
+
+    <!-- Author block -->
+    <section class="card">
+      <div class="author">
+        <div class="avatar">AB</div>
+        <div class="meta">
+          <p class="name"><b>Author Name</b></p>
+          <p class="bio">
+            Short bio (2–3 lines). Role, book, or link to their work.
+            You can add a link: <a href="#" rel="noopener">website</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comments (Giscus) -->
+    <section class="card">
+      <h2 style="margin:0 0 12px;">Comments</h2>
+      <p style="margin:0 0 14px; color:rgba(255,255,255,.72); font-size:.98rem;">
+        Sign in with GitHub to comment.
+      </p>
+
+      <!-- Giscus placeholder: you'll paste your real script here later -->
+      <div id="comments">
+        <!-- Giscus script goes here -->
+      </div>
+    </section>
+
+    <div class="footer">
+      2026 © Pin Saga · Scan the pin. Read the saga.
+    </div>
+
+  </div>
+</body>
+</html>
