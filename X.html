@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PIN #1 — Fernão de Magalhães | Pin Saga</title>
+  <link rel="shortcut icon" href="images/PinSaga.ico" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pin Saga | Cultural recognition project. Scan the pin. Read the saga." />
+  
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    :root{
+      --bg:#0f0f0f;
+      --panel:#151515;
+      --text:#ffffff;
+      --muted:rgba(255,255,255,.72);
+      --soft:rgba(255,255,255,.12);
+      --maxw:780px;
+      --radius:18px;
+    }
+
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.65;
+    }
+
+    a{ color:inherit; text-decoration:underline; text-underline-offset:3px; opacity:.95; }
+    a:hover{ opacity:1; }
+
+    .wrap{
+      max-width:var(--maxw);
+      margin:0 auto;
+      padding:40px 18px 80px;
+    }
+
+    .top{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+      margin-bottom:22px;
+    }
+
+    .brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    opacity:.95;
+    text-decoration:none;
+  }
+  .brand:hover{ opacity:1; }
+
+
+    .brand img{
+      width:28px;
+      height:28px;
+      display:block;
+    }
+
+    .brand-name{
+      font-size:.98rem;
+      letter-spacing:.06em;
+      text-transform:uppercase;
+      opacity:.9;
+    }
+
+    header{
+      margin-top:12px;
+      margin-bottom:26px;
+    }
+
+    .pin-title{
+      display:flex;
+      flex-direction: column;
+      align-items:flex-start;
+      gap:6px;
+      margin:0 0 10px;
+    }
+
+
+    .pin-badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:6px 10px;
+      border:1px solid var(--soft);
+      border-radius:999px;
+      background:rgba(255,255,255,.03);
+      font-size:.95rem;
+      letter-spacing:.02em;
+      opacity:.9;
+      white-space:nowrap;
+    }
+
+    .pin-badge b{ opacity:1; }
+
+    h1{
+      font-size:2.2rem;
+      margin:0;
+      letter-spacing:.01em;
+    }
+
+    .subtitle{
+      margin:0;
+      color:var(--muted);
+      font-size:1.05rem;
+      max-width:60ch;
+    }
+
+    .card{
+      background:var(--panel);
+      border:1px solid var(--soft);
+      border-radius:var(--radius);
+      padding:18px;
+      margin:18px 0;
+    }
+
+    .hero{
+      margin:18px 0 8px;
+    }
+
+    .hero img{
+      width:100%;
+      height:auto;
+      display:block;
+      border-radius:14px;
+      border:1px solid var(--soft);
+    }
+
+    .caption{
+      margin:10px 2px 0;
+      color:var(--muted);
+      font-size:.95rem;
+    }
+
+    .content p{
+      margin:0 0 14px;
+      color:rgba(255,255,255,.92);
+      font-size:1.06rem;
+    }
+
+    .content h2{
+      margin:26px 0 10px;
+      font-size:1.2rem;
+      letter-spacing:.01em;
+    }
+
+    .divider{
+      height:1px;
+      background:var(--soft);
+      margin:26px 0;
+      border:0;
+    }
+
+    .author{
+      display:flex;
+      gap:14px;
+      align-items:flex-start;
+      flex-wrap:wrap;
+    }
+
+    .author .avatar{
+      width:54px;
+      height:54px;
+      border-radius:14px;
+      border:1px solid var(--soft);
+      background:rgba(255,255,255,.04);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      color:rgba(255,255,255,.85);
+      flex:0 0 auto;
+    }
+
+    .author .meta{
+      flex:1 1 260px;
+      min-width:240px;
+    }
+
+    .author .name{
+      margin:0 0 6px;
+      font-size:1.05rem;
+    }
+
+    .author .bio{
+      margin:0;
+      color:var(--muted);
+      font-size:.98rem;
+    }
+
+    .footer{
+      margin-top:50px;
+      color:rgba(255,255,255,.55);
+      font-size:.92rem;
+      text-align:center;
+    }
+
+    /* Make embedded videos responsive */
+    .video{
+      position:relative;
+      padding-top:56.25%;
+      border-radius:14px;
+      overflow:hidden;
+      border:1px solid var(--soft);
+      background:#000;
+      margin:18px 0;
+    }
+    .video iframe{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      border:0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <div class="top">
+      <a class="brand" href="/" aria-label="Pin Saga home">
+      <img src="images/PinSaga.png" alt="Pin Saga">
+      <div class="brand-name">Pin Saga</div>
+    </a>
+
+    </div>
+      
+    <header>
+      <div class="pin-title">
+        <span class="pin-badge">PIN <b>#1</b></span>
+        <h1>Fernão de Magalhães</h1>
+      </div>
+      <p class="subtitle">
+        Origens e muito provável naturalidade. 
+      </p>
+    </header>
+
+    <!-- Optional hero image -->
+    <section class="hero">
+      <!-- replace with your photo -->
+      <img src="images/PonteBarca.jpg" alt="Pin #1 image">
+      <p class="caption">Paço Vedro de Magalhães. <br>
+        Location: Ponte da Barca, Portugal · 41°47′24.3″N 8°24′44.3″W </p>
+    </section>
+
+    <section class="card content">
+      <p>
+        Fernão de Magalhães é uma das figuras mais universais de Host´ria de portugal. Tão universal como controversa. Em 1519 iniciou a viagem mais fascinante da história dos Descobrimentos: a da circum-navegação da terra. 
+      </p>
+
+      <p>
+        Porém as polémicas em torno do seu percurso de vida e da sua carreira de explorador deram azo a equívocos e lendas, mas acima de tudo ao tentar encontar o lugar do seu nascimento, que terá ocurrido à beira do rio Lima. 
+        Em Ponte da Barca. 
+      </p>
+
+      <h2>Fontes e Bibliografia</h2>
+      <p>
+        Arquivo Distrital do Porto <br>
+        Arquivo Histórico Municipal do Porto <br>
+        Torre do Tombo <br>
+      </p>
+
+      <!-- Optional inline image -->
+      <!--
+      <div class="hero">
+        <img src="images/sample-mid.jpg" alt="Mid image">
+        <p class="caption">Mid caption (optional).</p>
+      </div>
+      -->
+
+      <!-- Optional video embed -->
+      <!--
+      <div class="video">
+        <iframe
+          src="https://www.youtube.com/embed/VIDEO_ID"
+          title="Pin Saga video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      -->
+    </section>
+
+    <hr class="divider" />
+
+    <!-- Author block -->
+    <section class="card">
+      <div class="author">
+        <div class="avatar">AB</div>
+        <div class="meta">
+          <p class="name"><b>Amândio Barros</b></p>
+          <p class="bio">
+            Licenciado em História pela Faculdade de Letras do Porto onde tem feito toda a sua carreira de investigador e as provas académicas de mestrado, doutoramento e pós-doutoramento, este em parceria com a Universidade de Valladolid.
+            
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comments (Giscus) -->
+    <section class="card">
+      <!--
+      <h2 style="margin:0 0 12px;">Comments</h2>
+      <p style="margin:0 0 14px; color:rgba(255,255,255,.72); font-size:.98rem;">
+        Sign in with GitHub to comment.
+      </p>
+      -->
+      <!-- Giscus placeholder: you'll paste your real script here later -->
+     <script src="https://giscus.app/client.js"
+        data-repo="pinsaga/Pin-Saga"
+        data-repo-id="R_kgDOQ7iGkQ"
+        data-category="General"
+        data-category-id="DIC_kwDOQ7iGkc4C1KWg"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="transparent_dark"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+    </script>
+    </section>
+
+    <div class="footer">
+      2026 © Pin Saga · Scan the pin. Read the saga.
+    </div>
+
+  </div>
+</body>
+</html>
