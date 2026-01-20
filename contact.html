@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact | Pin Saga</title>
+  <link rel="shortcut icon" href="images/PinSaga.ico" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pin Saga | Submit your saga." />
+
+  <style>
+    :root{
+      --bg:#0f0f0f;
+      --panel:#151515;
+      --text:#ffffff;
+      --muted:rgba(255,255,255,.72);
+      --soft:rgba(255,255,255,.12);
+      --maxw:780px;
+      --radius:18px;
+    }
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.65;
+    }
+    a{ color:inherit; text-decoration:underline; text-underline-offset:3px; opacity:.95; }
+    a:hover{ opacity:1; }
+    .wrap{
+      max-width:var(--maxw);
+      margin:0 auto;
+      padding:40px 18px 80px;
+    }
+    .top{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+      margin-bottom:22px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      opacity:.95;
+      text-decoration:none;
+    }
+    .brand:hover{ opacity:1; }
+    .brand img{ width:28px; height:28px; display:block; }
+    .brand-name{
+      font-size:.98rem;
+      letter-spacing:.06em;
+      text-transform:uppercase;
+      opacity:.9;
+    }
+
+    header{ margin-top:12px; margin-bottom:18px; }
+    h1{ font-size:2.2rem; margin:0 0 8px; letter-spacing:.01em; }
+    .subtitle{ margin:0; color:var(--muted); font-size:1.05rem; max-width:70ch; }
+
+    .card{
+      background:var(--panel);
+      border:1px solid var(--soft);
+      border-radius:var(--radius);
+      padding:18px;
+      margin:18px 0;
+    }
+
+    label{
+      display:block;
+      margin:14px 0 8px;
+      font-size:.95rem;
+      color:rgba(255,255,255,.88);
+    }
+
+    input, textarea{
+      width:100%;
+      background:rgba(255,255,255,.03);
+      color:rgba(255,255,255,.95);
+      border:1px solid var(--soft);
+      border-radius:14px;
+      padding:12px 12px;
+      font-size:1rem;
+      outline:none;
+    }
+    textarea{ resize:vertical; min-height:140px; }
+    input:focus, textarea:focus{
+      border-color:rgba(255,255,255,.22);
+    }
+
+    .row{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:14px;
+    }
+    @media (max-width: 640px){
+      .row{ grid-template-columns: 1fr; }
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      margin-top:14px;
+      background:rgba(255,255,255,.10);
+      border:1px solid var(--soft);
+      color:rgba(255,255,255,.95);
+      border-radius:999px;
+      padding:10px 14px;
+      font-size:.98rem;
+      cursor:pointer;
+    }
+    .btn:hover{ background:rgba(255,255,255,.14); }
+
+    .note{
+      margin-top:12px;
+      color:var(--muted);
+      font-size:.95rem;
+    }
+
+    .footer{
+      margin-top:50px;
+      color:rgba(255,255,255,.55);
+      font-size:.92rem;
+      text-align:center;
+    }
+
+    /* Honeypot field (anti-spam) */
+    .hp{
+      position:absolute;
+      left:-9999px;
+      width:1px;
+      height:1px;
+      overflow:hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="top">
+      <a class="brand" href="/" aria-label="Pin Saga home">
+        <img src="images/PinSaga.png" alt="Pin Saga">
+        <div class="brand-name">Pin Saga</div>
+      </a>
+    </div>
+
+    <header>
+      <h1>Submit your saga</h1>
+      <p class="subtitle">
+        Suggest a place, a person, or a story worth marking. If it fits Pin Saga, we’ll follow up.
+      </p>
+    </header>
+
+    <section class="card">
+      <form action="https://formspree.io/f/mpqqypnp" method="POST">
+
+        <!-- Honeypot -->
+        <div class="hp" aria-hidden="true">
+          <label>Leave this empty</label>
+          <input type="text" name="website" tabindex="-1" autocomplete="off">
+        </div>
+
+        <div class="row">
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          </div>
+        </div>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Tell us the story, where it is, why it matters..." required></textarea>
+
+        <button class="btn" type="submit">Send</button>
+
+        <p class="note">
+          We’ll only use your email to reply. No newsletters.
+        </p>
+      </form>
+    </section>
+
+    <div class="footer">
+      2026 © Pin Saga · Scan the pin. Read the saga.
+    </div>
+  </div>
+</body>
+</html>
