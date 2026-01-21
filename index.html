@@ -68,16 +68,16 @@
       opacity: 1;
     }
     .footer-link{
-      display: inline-flex;
+      display: block;
       align-items: center;
       gap: 8px;              /* espaço entre ícone e texto */
-      margin-bottom: 32px;
+      margin-bottom: 10px;
       text-decoration: none;
       color: inherit;
     }
     .footer-icon{
       width: 12px;           /* tamanho do ícone */
-      height: 12px;
+      height: auto;
       opacity: .9;           /* subtil */
     }
 
@@ -114,13 +114,21 @@
     </p>
 
     <div class="footer">
-      <a href="/contact.html" class="footer-link">
-      <img src="images/email.png" alt="" class="footer-icon">
+
+    <a href="/contact.html" class="footer-icon-link" aria-label="Contact">
+      <img src="images/email.png" alt="">
+    </a>
+  
+    <a href="/contact.html" class="footer-text-link">
       Submit your saga
     </a>
-
-      <div class="copyright">2026 © Pin Saga · Scan the pin. Read the saga.</div>
+  
+    <div class="copyright">
+      2026 © Pin Saga · Scan the pin. Read the saga.
     </div>
+  
+    </div>
+
 
   </div>
 </body>
