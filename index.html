@@ -52,35 +52,34 @@
     .footer {
       margin-top: 60px;
       font-size: 0.9rem;
+      text-align: center;
       opacity: 0.35;
     }
-    .footer a{
-      color: inherit;
-      text-decoration: underline;
-      text-underline-offset: 3px;
-      opacity: .85;
-      display: inline-block;
-      margin-bottom: 32px;
-      text-decoration: none; 
+    .footer-icon-link{
+      display: block;
+      margin-bottom: 10px;
     }
     
-    .footer a:hover{
-      opacity: 1;
+    .footer-icon-link img{
+      width: 18px;     /* ajusta aqui */
+      height: auto;    /* mantém proporções */
+      opacity: .55;    /* fica subtil */
     }
-    .footer-link{
+    .footer-text-link{
       display: block;
-      align-items: center;
-      gap: 8px;              /* espaço entre ícone e texto */
-      margin-bottom: 10px;
+      margin-bottom: 40px;  /* espaço antes do copyright */
+      color: rgba(255,255,255,.65);
       text-decoration: none;
-      color: inherit;
     }
-    .footer-icon{
-      width: 12px;           /* tamanho do ícone */
-      height: auto;
-      opacity: .9;           /* subtil */
+    
+    .footer-text-link:hover{
+      color: rgba(255,255,255,.9);
     }
-
+    
+    /* Copyright */
+    .footer .copyright{
+      color: rgba(255,255,255,.35);
+    }
     @media (max-width: 640px) {
     body {
       align-items: flex-start;
