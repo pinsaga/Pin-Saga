@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PIN #2 — Hard Club - Gaia | Pin Saga</title>
+  <link rel="shortcut icon" href="images/PinSaga.ico" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pin Saga | Cultural recognition project. Scan the pin. Read the saga." />
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    :root{
+      --bg:#0f0f0f;
+      --panel:#151515;
+      --text:#ffffff;
+      --muted:rgba(255,255,255,.72);
+      --soft:rgba(255,255,255,.12);
+      --maxw:780px;
+      --radius:18px;
+    }
+
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.65;
+    }
+
+    a{ color:inherit; text-decoration:underline; text-underline-offset:3px; opacity:.95; }
+    a:hover{ opacity:1; }
+
+    .wrap{
+      max-width:var(--maxw);
+      margin:0 auto;
+      padding:40px 18px 80px;
+    }
+
+    .top{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+      margin-bottom:22px;
+    }
+
+    .brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    opacity:.95;
+    text-decoration:none;
+  }
+  .brand:hover{ opacity:1; }
+
+
+    .brand img{
+      width:28px;
+      height:28px;
+      display:block;
+    }
+
+    .brand-name{
+      font-size:.98rem;
+      letter-spacing:.06em;
+      text-transform:uppercase;
+      opacity:.9;
+    }
+
+    header{
+      margin-top:12px;
+      margin-bottom:26px;
+    }
+
+    .pin-title{
+      display:flex;
+      flex-direction: column;
+      align-items:flex-start;
+      gap:6px;
+      margin:0 0 10px;
+    }
+
+
+    .pin-badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:6px 10px;
+      border:1px solid var(--soft);
+      border-radius:999px;
+      background:rgba(255,255,255,.03);
+      font-size:.95rem;
+      letter-spacing:.02em;
+      opacity:.9;
+      white-space:nowrap;
+    }
+
+    .pin-badge b{ opacity:1; }
+
+    h1{
+      font-size:2.2rem;
+      margin:0;
+      letter-spacing:.01em;
+    }
+
+    .subtitle{
+      margin:0;
+      color:var(--muted);
+      font-size:1.05rem;
+      max-width:60ch;
+    }
+
+    .card{
+      background:var(--panel);
+      border:1px solid var(--soft);
+      border-radius:var(--radius);
+      padding:18px;
+      margin:18px 0;
+    }
+
+    .hero{
+      margin:18px 0 8px;
+    }
+
+    .hero img{
+      width:100%;
+      height:auto;
+      display:block;
+      border-radius:14px;
+      border:1px solid var(--soft);
+    }
+
+    .caption{
+      margin:10px 2px 0;
+      color:var(--muted);
+      font-size:.95rem;
+    }
+
+    .content p{
+      margin:0 0 14px;
+      color:rgba(255,255,255,.92);
+      font-size:1.06rem;
+    }
+
+    .content h2{
+      margin:26px 0 10px;
+      font-size:1.2rem;
+      letter-spacing:.01em;
+    }
+    .band-list{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .band-list li{
+      font-size: 1.05rem;
+      line-height: 1.55;
+      color: rgba(255,255,255,.92);
+    }
+    .divider{
+      height:1px;
+      background:var(--soft);
+      margin:26px 0;
+      border:0;
+    }
+
+    .author{
+      display:flex;
+      gap:14px;
+      align-items:flex-start;
+      flex-wrap:wrap;
+    }
+
+    .author .avatar{
+      width:54px;
+      height:54px;
+      border-radius:14px;
+      border:1px solid var(--soft);
+      background:rgba(255,255,255,.04);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      color:rgba(255,255,255,.85);
+      flex:0 0 auto;
+    }
+
+    .author .meta{
+      flex:1 1 260px;
+      min-width:240px;
+    }
+
+    .author .name{
+      margin:0 0 6px;
+      font-size:1.05rem;
+    }
+
+    .author .bio{
+      margin:0;
+      color:var(--muted);
+      font-size:.98rem;
+    }
+
+    .footer{
+      margin-top:50px;
+      color:rgba(255,255,255,.55);
+      font-size:.92rem;
+      text-align:center;
+    }
+
+    /* Make embedded videos responsive */
+    .video{
+      position:relative;
+      padding-top:56.25%;
+      border-radius:14px;
+      overflow:hidden;
+      border:1px solid var(--soft);
+      background:#000;
+      margin:18px 0;
+    }
+    .video iframe{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      border:0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <div class="top">
+      <a class="brand" href="/" aria-label="Pin Saga home">
+      <img src="images/PinSaga.png" alt="Pin Saga">
+      <div class="brand-name">Pin Saga</div>
+    </a>
+
+    </div>
+      
+    <header>
+      <div class="pin-title">
+        <span class="pin-badge">PIN <b>#2</b></span>
+        <h1>Hard Club - Gaia</h1>
+      </div>
+      <p class="subtitle">
+        Primeira localização, entre 1997-2007.
+      </p>
+    </header>
+
+    <!-- Optional hero image -->
+    <section class="hero">
+      <!-- replace with your photo -->
+      <img src="images/H-C.jpg" alt="Hard-Club">
+      <p class="caption">Location: Vila Nova de Gaia, Portugal · 41°08'24.4"N 8°37'20.8"W </p>
+    </section>
+
+    <section class="card content">
+      <p>
+        Muitos dizem que foi a melhor sala para concertos que Portugal teve pela sua arquitetura e atmosfera dando aos concertos uma carga tão própria que não podia ser replicada em mais nenhum outro local. 
+        Fechou portas em 2007 mas por lá passaram no universo do Heavy Rock muita banda e gente famosa, deixando marcas na memoria de muita gente. Correndo o risco de faltarem bandas, eis a lista. 
+        Caso falte, podes comentar com a indicação da banda.
+      </p>
+
+      <p>
+      FEAR FACTORY · KRABATHOR · RAMMSTEIN · ANGELCORPSE · IMMORTAL · ENTWINED · MARDUK · SHELTER · SYMPHONY X · HEAVENWOOD · MORBID ANGEL · VADER · D.R.I. · DUB WAR · TARANTULA · CRADLE OF FILTH · KID LOCO · KING DIAMOND · WC NOISE · JESUS MARTYR · THIEVERY CORPORATION · MANOWAR · BLIND GUARDIAN · MADBALL · TOMAHAWK · THERAPY? · MOONSPELL · CRUCIBLE · RAIMUNDOS · RAMP · CANNIBAL CORPSE · ANNIHILATOR · OVERKILL · THREE POUNDS OF BAKON · LTJ BUKEM · AETERNUS · DEFLESHED · PARADISE LOST · STRATOVARIUS · BURIED ALIVE · VITAL REMAINS · AGNOSTIC FRONT · TESTAMENT · D-A-D · THE MISSION · RHAPSODY · CHARGED GBH · SONATA ARCTICA · BLOODHOUND GANG · KREATOR · DORO · NEVERMORE · SOILWORK · HAMMERFALL · VIRGIN STEELE · BESEECH · LACUNA COIL · THEATRE OF TRAGEDY · SACRED SIN · SATANIC SURFERS · VANISHING POINT · ANATHEMA · ORDO ROSARIUS EQUILIBRIO · RAISON D’ÊTRE · BIOHAZARD · YNGWIE MALMSTEEN · DROPKICK MURPHYS · FRENZAL RHOMB · LESS THAN JAKE · MUSE · LINEA 77 · EDGUY · KRISIUN · MACHINE HEAD · GAMMA RAY · THUNDERSTONE · TAPPING THE VEIN · WITHIN TEMPTATION · DESIRE · OPETH · STONE SOUR · PAIN · TIAMAT · DERANGED · CHILDREN OF BODOM · SHADOWS FALL · IMMOLATION · HATESPHERE · THE HAUNTED · MASTODON · HATE ETERNAL · AGENT STEEL · EXODUS · RATOS DE PORÃO · GOD DETHRONED · THE FLOWER KINGS · DIMMU BORGIR · LUNA · AT VANCE · KAMELOT · ARKHON INFAUSTUS · TIM BOOTH · HOCICO · THE LAST DANCE · SEX GANG CHILDREN · CALIBAN · GOD FORBID · GAROTOS PODRES · MOGWAI · DYING FETUS · TARA PERDIDA · BIZARRA LOCOMOTIVA · ATROCITY · BATTLELORE · LEAVES’ EYES · THE GATHERING · SAXON · PAATOS · EPICA · THE RASMUS · GOTTHARD · NOCTURNAL RITES · POWERWOLF · DIO · LACRIMOSA · LAIBACH · SOULFLY · SKYCLAD · DRAGONFORCE · SABATON · U.D.O. · EKTOMORF · TURBONEGRO · SEVERE TORTURE · GENOCIDE · ILL NIÑO · TO/DIE/FOR · MISERY INDEX · DANKO JONES · DISAVOWED · DEICIDE · VISCERAL BLEEDING · TWENTYINCHBURIAL · AMPLIFIER · DEATHSTARS · MATA-RATOS · ICED EARTH · TIERRA SANTA · PITCH BLACK · WAKO · WITCHERY · THERION · GOTHMINISTER · MAGO DE OZ · MENNEN · NORDICA · IN SOLITUDE · EVIDENCE · SINISTER · THE EXPLOITED · PLANET HEMP · TOY DOLLS
+      </p>
+
+
+      <h2>Sala de eventos</h2>
+      <p>
+        Inaugurada a 18 de Dezembro de 1997, teve a noite de despedida em 27 de Janeiro de 2007.
+        Com capacidade para 1000 pessoas, estava diversas vezes esgotada!
+      </p>
+
+      <!-- Optional inline image -->
+      <!--
+      <div class="hero">
+        <img src="images/sample-mid.jpg" alt="Mid image">
+        <p class="caption">Mid caption (optional).</p>
+      </div>
+      -->
+
+      <!-- Optional video embed -->
+      <!--
+      <div class="video">
+        <iframe
+          src="https://www.youtube.com/embed/VIDEO_ID"
+          title="Pin Saga video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      -->      
+    </section>
+    <!-- Extra photo (end of text) -->
+    <div class="hero">
+      <img src="images/HC.jpg" alt="Hard-Club">
+      <p class="caption">Sala com paredes em pedra, o que resultava numa experiência acustica ímpar.</p>
+    </div>
+    <hr class="divider" />
+
+    <section class="card content">
+      <p>
+      Testemunho sobre o Hard Club (Vila Nova de Gaia, 1997–2007)
+      </p>
+      <p>
+      Quando falamos do Hard Club, não estamos apenas a falar de mais uma sala de concertos. Falamos de um espaço que reuniu, dentro das suas paredes, vários estilos musicais: Heavy Metal, Reggae, Hip Hop, Pop, Rock, Drum'n'Bass, Trance e muitos outros.
+      Era um local onde muitos sonhos se tornavam realidade — tanto para os artistas como para o público.      
+      No universo do Hip Hop em Portugal, podemos mesmo dizer que o Hard Club, foi um dos grandes divulgadores e impulsionadores desta cultura durante os seus primeiros anos de crescimento no país. Muitos talentos nacionais passaram por aquele palco e deram ali passos importantes nas suas carreiras. Tudo isto movido, acima de tudo, pela paixão pela música por parte dos organizadores, que muitas vezes pouco se preocupavam se os concertos eram ou não rentáveis.
+      
+      Apesar da arquitectura em pedra e da decoração que poderia transmitir alguma frieza, a verdade é que o Hard Club tinha algo especial. O convívio, a energia e a alegria que se viviam ali dentro transformavam aquele espaço num lugar acolhedor — quase como uma segunda casa.      
+      Quem por lá passou dificilmente esquece.
+      
+      Como espectador, havia ali uma oportunidade rara: ver bandas que poucas vezes actuavam em Portugal, muitas vezes no mesmo palco que artistas já consagrados. Para muitos que assistiam àqueles concertos, começava também a nascer um sonho — o de um dia subir àquele palco.      
+      Infelizmente, o Hard Club acabou por fechar portas antes de muitos conseguirem concretizar esse sonho.
+      
+      No meu caso pessoal, com o projecto Barrako 27 e o Sindicato Sonoro, tive o privilégio de viver os dois lados dessa história. Durante anos estive entre o público, mas aquele palco acabaria também por ser o primeiro que pisei como artista.      
+      É sempre difícil explicar certas experiências. Principalmente quando elas nos marcam profundamente e ficam para sempre na memória.      
+      A música que ali se viveu, nas suas muitas formas e estilos, mudou muitas vidas. E ainda hoje, quando se recorda aquele espaço, parece possível sentir novamente um pouco desse ambiente.            
+      </p>            
+      </section>
+      
+    <!-- Author block -->
+    <section class="card">
+      <div class="author">
+        <div class="avatar">TEXT</div>
+        <div class="meta">
+          <p class="name"><b>Crónica por Né - Barrako 27</b></p>
+          <p class="bio">
+            Músico, produtor e fundador do projeto Barrako 27. Ligado à cena Hip-Hop do Porto desde os anos 80, foi um dos pioneiros da cultura urbana na cidade, influenciado pela escola underground francesa. Ao longo das décadas tem desenvolvido diversos projetos musicais, colaborações e atuações em Portugal e no estrangeiro.
+            <!--You can add a link: <a href="#" target="_blank" rel="noopener">website</a>.-->
+          </p>
+        </div>
+      </div>
+    </section>
+    <hr class="divider" />
+    <!-- Comments (Giscus) -->
+    <section class="card">
+      <!--
+      <h2 style="margin:0 0 12px;">Comments</h2>
+      <p style="margin:0 0 14px; color:rgba(255,255,255,.72); font-size:.98rem;">
+        Sign in with GitHub to comment.
+      </p>
+      -->
+      <!-- Giscus placeholder: you'll paste your real script here later -->
+     <script src="https://giscus.app/client.js"
+        data-repo="pinsaga/Pin-Saga"
+        data-repo-id="R_kgDOQ7iGkQ"
+        data-category="General"
+        data-category-id="DIC_kwDOQ7iGkc4C1KWg"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="transparent_dark"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+    </script> 
+    </section>
+
+    <div class="footer">
+      2026 © Pin Saga · Scan the pin. Read the saga.
+    </div>
+
+  </div>
+</body>
+</html>
